@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>엔삼클라우드</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/jquery.fullPage.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- JS -->
+  <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/jquery.fullPage.js"></script>
+  <script src="./js/scrolloverflow.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <div class="skip-nav">
+      <a href="#container">본문 바로가기</a>
+    </div>
+
+    <header id="header">
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="./main.html">엔삼클라우드</a>
+            </h1>
+            <nav class="nav">
+                <ul class="one-depth-wp">
+                    <li>
+                        <a class="one-depth">서비스</a>
+                        <ul class="two-depth-wp">
+                          <li><a href="./page/service-ai.html" class="two-depth">클라우드 AI</a></li>
+                          <li><a href="./page/service-consulting.html" class="two-depth">클라우드 컨설팅</a></li>
+                          <li><a href="./page/service-migration.html" class="two-depth">클라우드 마이그레이션</a></li>
+                          <li><a href="./page/service-managed.html" class="two-depth">클라우드 매니지드 서비스</a></li>
+                          <li><a href="./page/service-financial.html" class="two-depth">금융 클라우드</a></li>
+                          <li><a href="./page/service-public.html" class="two-depth">공공 클라우드</a></li>
+                          <li><a href="./page/service-certification.html" class="two-depth">공공 CSAP 보안인증 컨설팅</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="one-depth">솔루션</a>
+                        <ul class="two-depth-wp">
+                            <li><a href="#none" class="two-depth">NEW X.RAG</a></li>
+                            <li><a href="#none" class="two-depth">NEW X.Docs</a></li>
+                            <li><a href="#none" class="two-depth">NEW X.Billing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="one-depth">지원사업</a>
+                        <ul class="two-depth-wp">
+                            <li><a href="#none" class="two-depth">스타트업 지원 프로그램</a></li>
+                            <li><a href="#none" class="two-depth">금융클라우드 지원 사업</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="one-depth">회사소개</a>
+                    </li>
+                    <li>
+                        <a class="one-depth">고객지원</a>
+                        <ul class="two-depth-wp">
+                            <li><a href="#none" class="two-depth">문의하기</a></li>
+                            <li><a href="#none" class="two-depth">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-util">
+                <a href="#none" class="btn-contact">문의하기</a>
+                <button class="btn-menu" type="button"><i class="icon-menu"></i><i class="icon-close"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mo-nav">
+      <ul class="one-depth-wp">
+          <li>
+              <a class="one-depth">서비스<i class="icon-triangle-down"></i></a>
+              <ul class="two-depth-wp">
+                  <li><a href="./page/service-ai.html" class="two-depth">클라우드 AI</a></li>
+                  <li><a href="./page/service-consulting.html" class="two-depth">클라우드 컨설팅</a></li>
+                  <li><a href="./page/service-migration.html" class="two-depth">클라우드 마이그레이션</a></li>
+                  <li><a href="./page/service-managed.html" class="two-depth">클라우드 매니지드 서비스</a></li>
+                  <li><a href="./page/service-financial.html" class="two-depth">금융 클라우드</a></li>
+                  <li><a href="./page/service-public.html" class="two-depth">공공 클라우드</a></li>
+                  <li><a href="./page/service-certification.html" class="two-depth">공공 CSAP 보안인증 컨설팅</a></li>
+              </ul>
+          </li>
+          <li>
+              <a class="one-depth">솔루션<i class="icon-triangle-down"></i></a>
+              <ul class="two-depth-wp">
+                  <li><a href="#none" class="two-depth">NEW X.RAG</a></li>
+                  <li><a href="#none" class="two-depth">NEW X.Docs</a></li>
+                  <li><a href="#none" class="two-depth">NEW X.Billing</a></li>
+              </ul>
+          </li>
+          <li>
+              <a class="one-depth">지원사업<i class="icon-triangle-down"></i></a>
+              <ul class="two-depth-wp">
+                  <li><a href="#none" class="two-depth">스타트업 지원 프로그램</a></li>
+                  <li><a href="#none" class="two-depth">금융클라우드 지원 사업</a></li>
+              </ul>
+          </li>
+          <li>
+              <a class="one-depth">회사소개</a>
+          </li>
+          <li>
+              <a class="one-depth">고객지원<i class="icon-triangle-down"></i></a>
+              <ul class="two-depth-wp">
+                  <li><a href="#none" class="two-depth">문의하기</a></li>
+                  <li><a href="#none" class="two-depth">공지사항</a></li>
+              </ul>
+          </li>
+      </ul>
+      <div class="contact-wp">
+        <div class="contact">
+          <p class="tel"><b>Tel.</b><span>02.459.3779</span></p>
+          <p class="email"><b>Email.</b><span>n3sales@n3cloud.co.kr</span></p>
+        </div>
+      </div>
+
+    </div>
+
+    <section id="container" class="main-container">
+      <div id="fullpage" class="fullpage-wrapper">
+        <!-- Section 1 -->
+        <div id="section1" class="section sec-visual">
+          <div class="main-visual-swiper swiper-container">
+            <ul class="swiper-wrapper">
+              <!-- video1 -->
+              <li class="swiper-slide visual-video-wp">
+                <div class="video-bg change-ani">
+                  <video autoplay preload="none" loop muted playsinline><source src="./images/video/main_video1.mp4" type="video/mp4"></video>
+                  <div class="cover option1"></div>
+                </div>
+                <div class="visual-copy">
+                  <p class="copy-tit">스타트업 지원 프로그램</h6>
+                  <p class="copt-txt">
+                    <b>3,000개 이상의 스타트업이 선택한 네이버 클라우드 플랫폼!</b>
+                    <br>'네이버 클라우드 플랫폼 GreenHouse Benefit' 는 스타트업의 성장에 필요한 클라우드 인프라와 교육, 기술 컨설팅을 제공합니다.
+                  </p>
+                  <div class="video-link"><a href=""></a></div>
+                </div>
+              </li>
+              <!-- video2 -->
+              <li class="swiper-slide visual-video-wp">
+                <div class="video-bg">
+                  <video autoplay preload="none" loop muted playsinline><source src="./images/video/main_video2.mp4" type="video/mp4"></video>
+                  <div class="cover option2"></div>
+                </div>
+                <div class="visual-copy">
+                  <p class="copy-tit">공공 CSAP 보안인증 컨설팅</h6>
+                  <p class="copt-txt">
+                    <b>공공 SaaS 시장 진출을 위한 공공 CSAP 보안 인증 컨설팅!</b>
+                    <br>풍부한 경험과 전문성을 가진 네이버 클라우드 기반 아키텍처와 실무 밀착 컨설팅으로 빠르고 효율적인 CSAP 보안 인증 컨설팅을 제공합니다.
+                  </p>
+                  <div class="video-link"><a href=""></a></div>
+                </div>
+              </li>
+              <!-- video3 -->
+              <li class="swiper-slide visual-video-wp">
+                <div class="video-bg">
+                  <video autoplay preload="none" loop muted playsinline><source src="./images/video/main_video3.mp4" type="video/mp4"></video>
+                  <div class="cover option2"></div>
+                </div>
+                <div class="visual-copy">
+                  <p class="copy-tit">금융클라우드 지원 사업</h6>
+                  <p class="copt-txt">
+                    <b>클라우드로 도약하는 핀테크 성장의 기회!</b>
+                    <br>금융 특화 인프라와 전문 컨설팅및 클라우드 보조금 지원으로 핀테크 기업들의 안정적인 서비스 개발과 성장을 돕습니다.
+                  </p>
+                  <div class="video-link"><a href=""></a></div>
+                </div>
+              </li>
+              <!-- video4 -->
+              <li class="swiper-slide visual-video-wp">
+                <div class="video-bg">
+                  <video autoplay preload="none" loop muted playsinline><source src="./images/video/main_video4.mp4" type="video/mp4"></video>
+                  <div class="cover option3"></div>
+                </div>
+                <div class="visual-copy">
+                  <p class="copy-tit">NewX.RAG</h6>
+                  <p class="copt-txt">
+                    <b>문서를 이해하고 답을 찾아주는 기업용 AI 어시스턴트!</b>
+                    <br>비정형 문서와 시스템 데이터를 AI가 신속하게 분석하여, 질문에 맞는 핵심 정보를 정확하게 찾아내고
+                    <br>요약하는 클라우드 기반 RAG 솔루션입니다.
+                  </p>
+                  <div class="video-link"><a href=""></a></div>
+                </div>
+              </li>
+              <!-- video5 -->
+              <li class="swiper-slide visual-video-wp">
+                <div class="video-bg">
+                  <video autoplay preload="none" loop muted playsinline><source src="./images/video/main_video5.mp4" type="video/mp4"></video>
+                  <div class="cover option3"></div>
+                </div>
+                <div class="visual-copy">
+                  <p class="copy-tit">NEW X.Docs</h6>
+                  <p class="copt-txt">
+                    <b>지능형 문서 검색 플랫폼과 RAG 챗봇의 만남!</b>
+                    <br>AI 기반 자연어 검색, 유사 문서 그룹핑, AI 챗봇 요약 기능까지 -
+                    <br>대용량 문서를 빠르고 정확하게 탐색하고, 검색된 문서를 분석·정리하는 AI 솔루션입니다.
+                  </p>
+                  <div class="video-link"><a href=""></a></div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- control -->
+            <div class="visual-swiper-control">
+              <div class="swiper-pagination">
+                <div class="current-page">01</div>
+                <div class="visual-progressbar">
+                  <div class="bar"></div>
+                </div>
+                <div class="total-page">05</div>
+              </div>
+              <button class="btn-swiper-prev" type="button"><i class="icon-prev"></i></button>
+              <button class="btn-swiper-next" type="button"><i class="icon-next"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div id="section2" class="section sec-cloud">
+          <div class="inner">
+             <div class="title-wp">
+              <h2 class="category">Service</h2>
+              <h3 class="title">다양한 클라우드 서비스로<br>고객의 비즈니스를 완성합니다.</h3>
+             </div>
+            <div class="cloud-list-wp">
+              <ul class="cloud-list">
+                <li>
+                  <a href="">
+                    <p class="list-tit">클라우드 <b>AI</b></p>
+                    <p class="list-txt">생성형 AI 서비스를 통한<br>비즈니스 혁신</p>
+                    <img src="./images/cloud_img1.png" alt="AI">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="list-tit">클라우드 <b>컨설팅</b></p>
+                    <p class="list-txt">효율적이고 안정적인<br>클라우드 솔루션 제공</p>
+                    <img src="./images/cloud_img2.png" alt="컨설팅">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="list-tit">클라우드 <b>마이그레이션</b></p>
+                    <p class="list-txt">5단계에 걸친<br>신속하고 안전한 이전</p>
+                    <img src="./images/cloud_img3.png" alt="마이그레이션">
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="list-tit">클라우드 <b>매니지드 서비스</b></p>
+                    <p class="list-txt">높은 수준의 안전성과<br>보안성 확보</p>
+                    <img src="./images/cloud_img4.png" alt="매니지드 서비스">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3 -->
+        <div id="section3" class="section sec-service">
+          <div class="inner">
+            <div class="title-wp">
+              <h2 class="category">Service</h2>
+              <h3 class="title">공공 및 금융에 특화된 클라우드 구축부터<br>CSAP 인증 컨설팅까지, 엔삼클라우드가 책임집니다.</h3>
+            </div>
+            <div class="service-list-wp">
+              <ul class="service-list">
+                <li>
+                  <a href="">
+                    <p class="list-tit">공공 클라우드</p>
+                    <div class="group">
+                      <p class="list-txt">공공기관 전용 인프라로 안정적이고,<br>안전한 클라우드 환경 구축</p>
+                      <i class="icon-forward"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="list-tit">공공 CSAP 인증 컨설팅</p>
+                    <div class="group">
+                      <p class="list-txt">클라우드 보안 인증 획득을 위한 맞춤형<br>컨설팅 및 기술 지원</p>
+                      <i class="icon-forward"></i>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <p class="list-tit">금융 클라우드</p>
+                    <div class="group">
+                      <p class="list-txt">금융 규제를 완벽히 충족한 국내 유일의 검증된<br>금융 전용 클라우드</p>
+                      <i class="icon-forward"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div id="section4" class="section sec-solution fp-auto-height">
+          <div class="inner">
+            <div class="bg-gray">
+              <div class="inner-top">
+                <div class="title-wp">
+                  <h2 class="category">Solution</h2>
+                  <h3 class="title">엔삼클라우드만의 기술력으로,<br>고객 맞춤형 솔루션을 제공합니다.</h3>
+                </div>
+                <div class="group">
+                  <div class="img-list-wp">
+                    <ul class="img-list">
+                      <li><img src="./images/solution_img1.png" alt=""></li>
+                      <li><img src="./images/solution_img2.png" alt=""></li>
+                      <li><img src="./images/solution_img3.png" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="solution-list-wp">
+                    <ul class="solution-list">
+                      <li class="on">
+                        <p class="list-tit">NewX.RAG</p>
+                        <p class="list-txt">문서를 이해하고 답을 찾아주는<br>기업용 AI 어시스턴트</p>
+                        <a href="" class="btn-more">자세히보기<i class="icon-arrow-right"></i></a>
+                      </li>
+                      <li>
+                        <p class="list-tit">NewX.Docs</p>
+                        <p class="list-txt">AI 기반 대용량 문서 검색과 RAG 챗봇을 통한<br>최적화된 AI 검색 경험을 제공하는 솔루션</p>
+                        <a href="" class="btn-more">자세히보기<i class="icon-arrow-right"></i></a>
+                      </li>
+                      <li>
+                        <p class="list-tit">NEW X.Billing</p>
+                        <p class="list-txt">사용자들에게 서비스 이용에 대한 요금을<br>청구하는 시스템</p>
+                        <a href="" class="btn-more">자세히보기<i class="icon-arrow-right"></i></a>
+                      </li>
+                    </ul>
+                    <div class="mo-pagination-bullet">
+                      <span class="bullet on"></span><span class="bullet"></span><span class="bullet"></span>
+                    </div>
+                  </div>
+                  <div class="btn-wp">
+                      <button class="btn-left"><i class="icon-prev"></i></button>
+                      <button class="btn-right"><i class="icon-next"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inner-bottom">
+              <div class="title-wp">
+                <h3 class="title">여러 분야의 기업들이 엔삼클라우드가 함께합니다.</h3>
+              </div>
+              <div class="btn-more">
+                <a href="">고객사 보러가기</a>
+              </div>
+              <div class="slider-list-wp">
+                <ul class="slider-list">
+                  <li><img src="./images/slider_img1.png" alt=""></li>
+                  <li><img src="./images/slider_img2.png" alt=""></li>
+                  <li><img src="./images/slider_img3.png" alt=""></li>
+                  <li><img src="./images/slider_img4.png" alt=""></li>
+                  <li><img src="./images/slider_img5.png" alt=""></li>
+                  <li><img src="./images/slider_img6.png" alt=""></li>
+                </ul>
+                <div class="btn-wp">
+                  <div class="btns">
+                    <button class="btn-left"><i class="icon-prev"></i></button>
+                    <button class="btn-right"><i class="icon-next"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section5" class="section fp-auto-height">
+          <footer id="footer">
+            <div class="footer-inner">
+              <div class="top-wp">
+                <div class="f-link">
+                  <img class="logo" src="./images/logo_white.svg" alt="엔삼클라우드">
+                  <div class="link">
+                    <a href="">회사소개</a>
+                    <span class="line"></span>
+                    <a href="">서비스 안내</a>
+                    <span class="line"></span>
+                    <a href="">개인정보처리방침</a>
+                  </div>
+                </div>
+                <div class="f-info">
+                  <div class="info">
+                    <p class="name">㈜엔삼클라우드</p>
+                    <p class="ceo">대표이사 : 김동수   |   사업자등록번호 : 371-88-02403</p>
+                    <p class="address">(05854)서울시 송파구 법원로 114, 에이동 3층 에이312호(문정동, 엠스테이트)</p>
+                  </div>
+                  <div class="contact">
+                    <p class="tel"><b>Tel.</b><span>02.459.3779</span></p>
+                    <p class="email"><b>Email.</b><span>n3sales@n3cloud.co.kr</span></p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="bottom-wp">
+                <p class="f-copyright">Copyright © N3CLOUD Cloud Corp. All Rights Reserved.</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <a href="" class="btn-qa"><i class="icon-comment"></i></a>
+    <a class="btn-top"><i class="icon-arrow-up out"></i><i class="icon-arrow-up in"></i></a>
+  </div>
+</body>
+</html>
