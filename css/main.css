@@ -25,18 +25,13 @@
     0% { width: 0%; }
     100% { width: 100%; }
   }
-.sec-visual .change-ani {position: absolute;left: 50%;width: 320px;height: 320px;border-radius: 200px;transform: translateX(-50%);opacity: 0;z-index: 1;overflow: hidden;
+.sec-visual .change-ani {position: absolute;left: 50%;width: 320px;height: 320px;border-radius: 200px;transform: translateX(-50%);opacity: 0;overflow: hidden;
   /* iOS */
-  -webkit-mask-image: radial-gradient(circle at center, black 100%, transparent 100%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  -webkit-mask-composite: destination-in;
-  mask-composite: intersect;}
+  z-index: 0;
+  isolation: isolate;
+ -webkit-mask-image: -webkit-radial-gradient(white, black);}
 .sec-visual .change-ani.play {animation: changeAni 1s ease-in-out forwards;}
-.sec-visual .change-ani.done {top: 0;width: 100%;height: 100%;opacity: 1;border-radius: 0;
-  /* iOS */
-  -webkit-mask-image: none;
-  mask-image: none;}
+.sec-visual .change-ani.done {top: 0;width: 100%;height: 100%;opacity: 1;border-radius: 0;}
 @keyframes changeAni {
   0% {top: 55%;width: 220px;height: 220px;border-radius: 200px;opacity: 0;}
   50% {top: calc(50% - 160px);width: 320px;height: 320px;border-radius: 200px;opacity: 1;}
