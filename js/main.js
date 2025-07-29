@@ -6,7 +6,7 @@ function changeAni() {
   if (!change) return;
 
   change.classList.remove('done');
-  void change.offsetWidth;  // <-- 이 부분이 중요!
+  void change.offsetWidth;
 
   change.classList.add('play');
 
