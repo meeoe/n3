@@ -258,7 +258,7 @@ body {touch-action: none;}
 .sec-package .support-wp {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;margin-top: 70px;}
 .sec-package .support-wp .tit {color: var(--sub_gray_6, #232323);font-size: 32px;font-weight: 700;line-height: 140%;}
 .sec-package .support-wp .txt {color: var(--gray_blue, #676A79);font-size: 18px;font-weight: 500;line-height: 160%;margin-top: 13px;}
-@media screen and (min-width: 768px) and (max-width: 1046px) {
+@media screen and (min-width: 768px) and (max-width: 1045px) {
     .sec-package .support-wp {justify-content: center;text-align: center;word-break: keep-all;}
     .sec-package .support-wp .pill-link {margin-top: 22px;}
 }
