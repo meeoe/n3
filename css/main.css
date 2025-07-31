@@ -232,7 +232,9 @@
   .sec-service .service-list-wp .service-list li {width: 100%;height: 320px;}
   .sec-service .service-list-wp .service-list li::after {opacity: 1;height: 160px;background: linear-gradient(180deg, rgba(0, 46, 95, 0.00) 0%, rgba(0, 46, 95, 0.70) 75.48%);background-blend-mode: multiply;backdrop-filter: blur(1.5px);}
   .sec-service .service-list-wp .service-list li.on {width: 100%;}
-  .sec-service .service-list-wp .service-list li .list-tit {left: 30px;bottom: 100px;text-shadow: 0px 1px 16px rgba(8, 66, 128, 0.16);font-size: 24px;}
+  .sec-service .service-list-wp .service-list li.on::before {opacity: 1;}
+  .sec-service .service-list-wp .service-list li .list-tit, 
+  .sec-service .service-list-wp .service-list li.on .list-tit {left: 30px;bottom: 100px;text-shadow: 0px 1px 16px rgba(8, 66, 128, 0.16);font-size: 24px;}
   .sec-service .service-list-wp .service-list li .group {opacity: 1;padding: 0 30px 43px;width: 100%;}
   .sec-service .service-list-wp .service-list li .group .list-txt {font-size: 14px;}
 
