@@ -301,7 +301,6 @@ body {touch-action: none;}
 @media screen and (min-width: 768px) and (max-width: 1280px) {
   body {touch-action: auto;}
     #header {height: 72px;}
-    #header.hide {transform: none;}
     .header-inner .logo {left: 32px;height: 72px;}
     .header-inner .logo a {width: 170px;}
     .header-inner .header-util {height: 72px;right: 32px;}
@@ -334,10 +333,10 @@ body {touch-action: none;}
     .sub-nav {top: 72px;height: 64px;}
     .sub-nav .inner {max-width: 100%;padding: 0 34px;}
     .sub-contents {padding-top: 72px;}
-    .sub-nav.top {top: 72px;}
+    .sub-nav.top {top: 0;}
 
-    .scroll-tab-wp {top: 144px;}
-    .scroll-tab-wp.top {top: 144px;}
+    .scroll-tab-wp {top: 136px;}
+    .scroll-tab-wp.top {top: 63px;}
     
     .intro-wp .inner {padding: 0 34px;}
     .intro-wp .intro-tit {font-size: 48px;}

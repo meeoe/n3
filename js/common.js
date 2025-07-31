@@ -29,12 +29,14 @@ function initScrollHideHeader() {
   const header = document.getElementById("header");
   const subNav = document.querySelector(".sub-nav");
   const scrollTab = document.querySelector(".scroll-tab-wp");
+  const moNav = document.querySelector(".mo-nav");
   let lastScrollY = window.scrollY;
 
   window.addEventListener("scroll", function () {
     const currentScrollY = window.scrollY;
+    const isMobileNavOpen = moNav?.classList.contains("on");
 
-    if (currentScrollY > lastScrollY) {
+    if (!isMobileNavOpen && currentScrollY > lastScrollY) {
       header.classList.add("hide");
       if (subNav) subNav.classList.add("top");
       if (scrollTab) scrollTab.classList.add("top");
@@ -43,6 +45,7 @@ function initScrollHideHeader() {
       if (subNav) subNav.classList.remove("top");
       if (scrollTab) scrollTab.classList.remove("top");
     }
+
     lastScrollY = currentScrollY;
   });
 }
