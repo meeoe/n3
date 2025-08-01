@@ -108,8 +108,8 @@ function initScrollTab() {
       });
 
       const li = this.parentElement;
-      li.parentElement.querySelectorAll('li').forEach(item => item.classList.remove('on'));
-      li.classList.add('on');
+      // li.parentElement.querySelectorAll('li').forEach(item => item.classList.remove('on'));
+      // li.classList.add('on');
     });
   });
 

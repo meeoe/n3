@@ -161,11 +161,12 @@ body {touch-action: none;}
 .scroll-tab-wp {position: sticky;opacity: 0;top: 140px;padding: 50px 0 0;margin-bottom: 10px;width: 100%;text-align: center;z-index: 10;animation: scrollTabAni 1000ms ease forwards;animation-delay: 1500ms;}
 @keyframes scrollTabAni {from {opacity: 0;} to {opacity: 1;}}
 .scroll-tab-wp.top {top: 71px;}
-.scroll-tab-wp .scroll-tab {display: inline-flex;padding: 11px 31px;justify-content: center;align-items: center;gap: 40px;border-radius: 10px;border: 1px solid var(--sub_gray_6, #232323);background: rgba(33, 33, 33, 0.82);background-blend-mode: multiply;backdrop-filter: blur(4px);}
-.scroll-tab-wp .scroll-tab li {width: 80px;padding: 8px 0;}
+.scroll-tab-wp .scroll-tab {display: inline-flex;/*padding: 11px 44px 11px 20px;*/padding: 11px 31px; justify-content: center;align-items: center;gap: 40px;border-radius: 10px;border: 1px solid var(--sub_gray_6, #232323);background: rgba(33, 33, 33, 0.82);background-blend-mode: multiply;backdrop-filter: blur(4px);}
+.scroll-tab-wp .scroll-tab li {width: 80px;padding: 8px 0;/*text-align: right;*/}
 .scroll-tab-wp .scroll-tab li a {color: var(--White, #FFF);text-align: center;font-size: 18px;font-weight: 400;line-height: 140%;}
 .scroll-tab-wp .scroll-tab li.on a {font-weight: 800;}
-.scroll-tab-wp .scroll-tab li.on a::before {content: '';display: inline-block;width: 8px;height: 8px;background: var(--Point, #FF7409);border-radius: 100px;margin-right: 8px;vertical-align: middle;}
+.scroll-tab-wp .scroll-tab li a::before {content: '';display: inline-block;width: 8px;height: 8px;background: transparent;border-radius: 100px;margin-right: 8px;vertical-align: middle;}
+.scroll-tab-wp .scroll-tab li.on a::before {background: var(--Point, #FF7409);}
 
 /* ui - pill-link */
 .pill-link {display: inline-flex;padding: 18px 40px;align-items: center;gap: 16px;border-radius: 100px;border: 2px solid var(--sub_gray_6, #232323);background: var(--White, #FFF);color: var(--sub_gray_6, #232323);font-size: 17px;font-weight: 600;line-height: 140%;}
