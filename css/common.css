@@ -157,14 +157,14 @@ select {
     border-radius: 3px;
     font-size: inherit;
     background-repeat: no-repeat;
-    background-position: right 5px center;
+    background-position: right 32px center;
     background-size: 1em;
-    background-image: url("../images/select_arrow.png");
+    background-image: url("../images/select_arrow_down.svg");
     min-width:60px;
     height:28px;
 }
 select:focus {
-  background-image: url("../images/select_arrow_up.png");
+  background-image: url("../images/select_arrow_up.svg");
 }
 
 .checkbox label, .radio label { vertical-align: middle; padding-right:10px;}

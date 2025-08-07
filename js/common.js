@@ -141,7 +141,10 @@ function initMobileNav() {
   // 네비게이션 메뉴 항목 클릭
   document.querySelectorAll('.mo-nav .one-depth').forEach(function (oneDepthItem) {
     oneDepthItem.addEventListener('click', function (e) {
-      e.preventDefault();
+       const href = this.getAttribute('href');
+        if (href === '#' || href === '' || !href) {
+          e.preventDefault(); // 링크 이동 막음
+        }
 
       const currentLi = this.closest('li');
       const navRoot = this.closest('.mo-nav');
