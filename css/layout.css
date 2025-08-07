@@ -684,8 +684,9 @@ body {touch-action: none;}
     .contact .form-wrap .submit .btn-submit {width: 100%;font-size: 18px;padding: 20px 56px;}
 
     /* about */
-    .about .title {font-size: 24px;}
-    .about .sec-info .sub-title {font-size: 24px;word-break: keep-all;}
+    .about .title {font-size: 20px;}
+    .about .sec-info .sub-title {font-size: 20px;word-break: keep-all;}
+    .about .sec-info .info-img {margin-top: 32px;}
     .about .intro-wp {padding-bottom: 52px;}
     .about .sec-info {padding: 0 23px;}
     /* sec-map */
