@@ -465,7 +465,10 @@ $(document).ready(function () {
 });
 
 $(document).on('click', '.mo-nav .one-depth', function (e) {
-  e.preventDefault();
+  const href = this.getAttribute('href');
+  if (href === '#' || href === '' || !href) {
+    e.preventDefault(); // 링크 이동 막음
+  }
 
   const $currentLi = $(this).closest('li');
   const $navRoot = $(this).closest('.mo-nav');
