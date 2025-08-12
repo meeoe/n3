@@ -218,7 +218,7 @@
   .sec-cloud .title-wp .title {margin-bottom: 26px;}
   .sec-cloud .cloud-list-wp {height: 312px;padding: 31px 0;}
   .sec-cloud .cloud-list-wp::before {background-size: auto 312px;}
-  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;  overflow-x: auto;overflow-y: hidden;-webkit-overflow-scrolling: touch;touch-action: pan-x;padding: 0 71px 5px;}
+  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;  overflow-x: auto;overflow-y: hidden;-webkit-overflow-scrolling: touch;touch-action: pan-x;padding: 0 71px 5px;z-index: 2;}
   .sec-cloud .cloud-list-wp .cloud-list::-webkit-scrollbar-button:start:decrement,
    .sec-cloud .cloud-list-wp .cloud-list::-webkit-scrollbar-button:end:increment {width: 70px;}
   .sec-cloud .cloud-list-wp .cloud-list li {flex-shrink: 0;width: 250px;height: 250px;}
@@ -295,7 +295,7 @@
   .sec-cloud .title-wp .title {margin-bottom: 26px;}
   .sec-cloud .cloud-list-wp {height: 312px;padding: 31px 0;}
   .sec-cloud .cloud-list-wp::before {background-size: auto 312px;}
-  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;  overflow-x: auto;overflow-y: hidden;-webkit-overflow-scrolling: touch;touch-action: pan-x;padding: 0 71px;}
+  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;  overflow-x: auto;overflow-y: hidden;-webkit-overflow-scrolling: touch;touch-action: pan-x;padding: 0 71px;z-index: 2;}
   .sec-cloud .cloud-list-wp .cloud-list li {flex-shrink: 0;width: 250px;height: 250px;}
   .sec-cloud .cloud-list-wp .cloud-list li > a .list-tit {font-size: 20px;margin-bottom: 9px;}
   .sec-cloud .cloud-list-wp .cloud-list li > a .list-txt {font-size: 14px;line-height: 140%;}
