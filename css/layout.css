@@ -878,11 +878,11 @@ body {touch-action: none;}
 
     .sec-slide .slide-list-wp {background: none;padding: 0;margin-top: 40px;}
     .sec-slide .slide-list {margin: 0;}
-    .sec-slide .slide-list ul {padding-bottom: 52px;}
+    .sec-slide .slide-list ul {padding-bottom: 63px;}
     .sec-slide .slide-list .img-box {width: 100%;}
     .sec-slide .slide-list .name-box {width: 264px;height: 56px;box-shadow: 0 10px 20px 0 #D1D6E6;}
     .sec-slide .slide-list .name-box .num {font-size: 56px;}
     .sec-slide .slide-list .name-box .name {font-size: 14px;}
-    .sec-slide .slide-list-wp .mo-pagination-bullet {display: flex;margin-top: 11px;}
+    .sec-slide .slide-list-wp .mo-pagination-bullet {display: flex;margin-top: 0;}
     .sec-slide .slide-list-wp .btn-wp {display: none;}
 }
