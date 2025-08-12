@@ -134,6 +134,12 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 input[type="time"], input[type="date"] {background:#fff;}
 input[type="time"] {height:29.8px; line-height:normal;}
 
+img {
+    user-drag: none; /* Safari/Chrome */
+    user-select: none; /* 드래그 선택 방지 */
+    -webkit-user-drag: none; /* 구버전 WebKit */
+}
+
 /* file attach */
 .input-file { display:inline-block;}
 .input-file label { position:relative; cursor:pointer; display:inline-block; vertical-align:middle; overflow:hidden; padding:4px 8px; background:#939393;color:#fff;text-align:center; border-radius:4px; font-size:.85rem; border:1px solid #7e7e7e; line-height:1.5;}
