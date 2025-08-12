@@ -218,7 +218,7 @@
   .sec-cloud .title-wp .title {margin-bottom: 26px;}
   .sec-cloud .cloud-list-wp {height: 312px;padding: 31px 0;}
   .sec-cloud .cloud-list-wp::before {background-size: auto 312px;}
-  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;overflow: auto;padding: 0 71px;}
+  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;overflow: auto;-webkit-overflow-scrolling: touch;padding: 0 71px;}
   .sec-cloud .cloud-list-wp .cloud-list li {flex-shrink: 0;width: 250px;height: 250px;}
   .sec-cloud .cloud-list-wp .cloud-list li > a .list-tit {font-size: 20px;margin-bottom: 9px;}
   .sec-cloud .cloud-list-wp .cloud-list li > a .list-txt {font-size: 14px;line-height: 140%;}
@@ -293,7 +293,7 @@
   .sec-cloud .title-wp .title {margin-bottom: 26px;}
   .sec-cloud .cloud-list-wp {height: 312px;padding: 31px 0;}
   .sec-cloud .cloud-list-wp::before {background-size: auto 312px;}
-  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;overflow: auto;padding: 0 71px;}
+  .sec-cloud .cloud-list-wp .cloud-list {justify-content: flex-start;overflow: auto;-webkit-overflow-scrolling: touch;padding: 0 71px;}
   .sec-cloud .cloud-list-wp .cloud-list li {flex-shrink: 0;width: 250px;height: 250px;}
   .sec-cloud .cloud-list-wp .cloud-list li > a .list-tit {font-size: 20px;margin-bottom: 9px;}
   .sec-cloud .cloud-list-wp .cloud-list li > a .list-txt {font-size: 14px;line-height: 140%;}
