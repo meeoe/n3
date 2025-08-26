@@ -78,9 +78,71 @@ function initSubNavToggle() {
   });
 }
 
+// function initScrollTab() {
+//   const anchors = document.querySelectorAll('.scroll-tab a');
+//   const sections = [];
+//   let isClickScrolling = false;
+
+//   anchors.forEach(anchor => {
+//     const targetSelector = anchor.getAttribute('href');
+//     const targetElement = document.querySelector(targetSelector);
+//     if (targetElement) {
+//       sections.push(targetElement);
+//     }
+//   });
+
+//   anchors.forEach(anchor => {
+//     anchor.addEventListener('click', function(e) {
+//       e.preventDefault();
+
+//       const targetSelector = this.getAttribute('href');
+//       const targetElement = document.querySelector(targetSelector);
+//       if (!targetElement) return;
+
+//       const offset = 150;
+//       const elementPosition = targetElement.getBoundingClientRect().top;
+//       const offsetPosition = window.pageYOffset + elementPosition - offset;
+
+//       isClickScrolling = true;
+
+//       window.scrollTo({
+//         top: offsetPosition,
+//         behavior: 'smooth'
+//       });
+
+//       anchors.forEach(a => a.parentElement.classList.remove('on'));
+//       this.parentElement.classList.add('on');
+
+//       setTimeout(() => {
+//         isClickScrolling = false;
+//       }, 600); // 스무스 스크롤 시간과 맞추기
+//     });
+//   });
+
+//   window.addEventListener('scroll', () => {
+//     if (isClickScrolling) return;
+
+//     const scrollPos = window.scrollY || window.pageYOffset;
+
+//     let currentIndex = 0;
+//     sections.forEach((sec, i) => {
+//       const offsetTop = sec.offsetTop;
+//       if (scrollPos >= offsetTop - window.innerHeight / 2) {
+//         currentIndex = i;
+//       }
+//     });
+
+//     anchors.forEach(anchor => anchor.parentElement.classList.remove('on'));
+//     if (anchors[currentIndex]) {
+//       anchors[currentIndex].parentElement.classList.add('on');
+//     }
+//   });
+// }
+
 function initScrollTab() {
   const anchors = document.querySelectorAll('.scroll-tab a');
   const sections = [];
+  let isClickScrolling = false;
 
   anchors.forEach(anchor => {
     const targetSelector = anchor.getAttribute('href');
@@ -91,7 +153,7 @@ function initScrollTab() {
   });
 
   anchors.forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
       const targetSelector = this.getAttribute('href');
@@ -102,21 +164,30 @@ function initScrollTab() {
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = window.pageYOffset + elementPosition - offset;
 
+      isClickScrolling = true;
+
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
 
-      const li = this.parentElement;
-      // li.parentElement.querySelectorAll('li').forEach(item => item.classList.remove('on'));
-      // li.classList.add('on');
+      anchors.forEach(a => a.parentElement.classList.remove('on'));
+      this.parentElement.classList.add('on');
+
+      if (!("onscrollend" in window)) {
+        setTimeout(() => {
+          isClickScrolling = false;
+        }, 700);
+      }
     });
   });
 
   window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY || window.pageYOffset;
+    if (isClickScrolling) return; 
 
+    const scrollPos = window.scrollY || window.pageYOffset;
     let currentIndex = 0;
+
     sections.forEach((sec, i) => {
       const offsetTop = sec.offsetTop;
       if (scrollPos >= offsetTop - window.innerHeight / 2) {
@@ -129,7 +200,14 @@ function initScrollTab() {
       anchors[currentIndex].parentElement.classList.add('on');
     }
   });
+
+  if ("onscrollend" in window) {
+    window.addEventListener("scrollend", () => {
+      isClickScrolling = false;
+    });
+  }
 }
+
 
 function initMobileNav() {
   // 메뉴 버튼 클릭

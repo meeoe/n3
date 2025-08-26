@@ -270,7 +270,7 @@ body {touch-action: none;}
 .sec-feat .feat-box-wp .row {display: flex;justify-content: space-between;align-items: stretch;}
 .sec-feat .feat-box-wp.col-3 .row {gap: 40px;}
 .sec-feat .feat-box-wp.col-4 .row {gap: 24px;}
-.sec-feat .feat-box-wp .feat-box {flex: 1;display: flex;flex-direction: column;justify-content: center;align-items: flex-start;gap: 12px;border-radius: 16px;background: var(--sub_gray_00, #F9F9F9);}
+.sec-feat .feat-box-wp .feat-box {flex: 1;display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;gap: 12px;border-radius: 16px;background: var(--sub_gray_00, #F9F9F9);}
 .sec-feat .feat-box-wp.col-3 .feat-box {padding: 33px 20px 35px 50px;}
 .sec-feat .feat-box-wp.col-4 .feat-box {padding: 33px 40px 35px;}
 .sec-feat .feat-box-wp .feat-box .box-tit {color: var(--sub_gray_6, #232323);font-size: 20px;font-weight: 700;line-height: 140%;}
@@ -336,7 +336,7 @@ body {touch-action: none;}
 .sec-package .package-list li {position: relative;flex: 1;height: 280px;border-bottom: 2px solid var(--Main, #002E5F);background: var(--White, #FFF);}
 .sec-package .package-list li .tit {position: relative;display: flex;justify-content: center;align-items: center;width: 100%;height: 80px;background: var(--Main, #002E5F);color: #FFF;text-align: center;font-size: 18px;font-weight: 600;line-height: 100%;}
 .sec-package .package-list li .tit::after {content: '';display: block; position: absolute;top: 100%;left: 50%;transform: translateX(-50%);border-left: 9px solid transparent;border-right: 9px solid transparent;border-top: 9px solid var(--Main, #002E5F);}
-.sec-package .package-list li .txt {color: var(--sub_gray_6, #232323);font-size: 16px;font-weight: 500;line-height: 180%;padding: 25px;}
+.sec-package .package-list li .txt {color: var(--sub_gray_6, #232323);font-size: 16px;font-weight: 500;line-height: 180%;padding: 25px 15px 25px 20px;}
 .sec-package .package-list li img {position: absolute;right: 22px;bottom: 25px;}
 .sec-package .package-info-list {display: flex;gap: 16px;}
 .sec-package .package-info-list li {flex: 1;height: 203px;border-radius: 16px;background: var(--White, #FFF);box-shadow: 0 2px 8px 0 rgba(183, 183, 183, 0.20);padding: 33px 32px 30px;}
