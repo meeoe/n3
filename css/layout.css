@@ -157,7 +157,7 @@ body {touch-action: none;}
 .intro-wp .intro-img img {width: 100%;height: 100%;object-fit: cover;}
 
 /* scroll tab */
-.scroll-tab-wp {position: sticky;opacity: 0;top: 122px;padding: 40px 0 0;margin-bottom: 10px;width: 100%;text-align: center;z-index: 50;animation: scrollTabAni 1000ms ease forwards;animation-delay: 1500ms;}
+.scroll-tab-wp {position: sticky;opacity: 0;top: 122px;padding: 40px 0 0;margin-bottom: 10px;width: 100%;text-align: center;z-index: 1;animation: scrollTabAni 1000ms ease forwards;animation-delay: 1500ms;}
 @keyframes scrollTabAni {from {opacity: 0;} to {opacity: 1;}}
 .scroll-tab-wp.top {top: 40px;}
 .scroll-tab-wp .scroll-tab {display: inline-flex;padding: 8px 32px;justify-content: center;align-items: center;gap: 32px;border-radius: 10px;border: 1px solid var(--sub_gray_6, #232323);background: rgba(33, 33, 33, 0.82);background-blend-mode: multiply;backdrop-filter: blur(4px);}
