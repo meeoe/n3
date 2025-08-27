@@ -388,7 +388,7 @@ body {touch-action: none;}
 .about .sec-info .info-img {margin-top: 57px;}
 .about .sec-info .info-img .pc {padding-right: 50px;}
 .about .sec-map {padding: 109px 68px 0;}
-.about .sec-map .map {height: 568px;margin-top: 40px;}
+.about .sec-map .map-wp {height: 568px;margin-top: 40px;}
 .about .sec-map .map-info {margin-top: 80px;display: flex;justify-content: space-between;align-items: center;}
 .about .sec-map .map-info .label {color: var(--Point, #FF7409);font-size: 24px;font-weight: 700;line-height: 160%;margin-right: 14px;}
 .about .sec-map .map-info .info {color: var(--sub_gray_6, #232323);font-size: 20px;font-weight: 500;line-height: 160%;}
@@ -826,7 +826,7 @@ body {touch-action: none;}
     .about .sec-info {padding: 0 23px;}
     /* sec-map */
     .about .sec-map {padding: 77px 0 0;}
-    .about .sec-map .map {height: 400px;margin-top: 34px;}
+    .about .sec-map .map-wp {height: 400px;margin-top: 34px;}
     .about .sec-map .map-info {flex-direction: column;align-items: flex-start;margin-top: 30px;padding: 0 24px;}
     .about .sec-map .map-info .tel,
     .about .sec-map .map-info .email {text-align: left;}
