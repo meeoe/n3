@@ -537,7 +537,7 @@ body {touch-action: none;}
     .scroll-tab-wp {top: 134px;}
     .scroll-tab-wp.top {top: 63px;}
     
-    .intro-wp {padding: 0 0 23px;}
+    .intro-wp {padding: 50px 0 23px;}
     .intro-wp .inner {padding: 0 34px;}
     .intro-wp .intro-tit {font-size: 48px;}
     .intro-wp .intro-txt {margin-top: 13px;}
