@@ -139,10 +139,10 @@
 .sec-solution .inner-top .img-list-wp .img-list li > img {width: 100%;height: auto;}
 .sec-solution .inner-top .solution-list-wp {position: relative;padding-bottom: 34px;padding-left: 397px;z-index: 1;overflow: hidden;z-index: 1;}
 .sec-solution .inner-top .solution-list-wp .solution-list {display: flex;gap: 46px;}
-.sec-solution .inner-top .solution-list-wp .solution-list li {width: 456px;height: 256px;flex-shrink: 0;border-radius: 48px;opacity: 0.5;background: linear-gradient(90deg, #FFF 8.33%, rgba(255, 255, 255, 0.00) 57.94%);padding: 48px 60px;}
+.sec-solution .inner-top .solution-list-wp .solution-list li {width: 456px;height: 256px;flex-shrink: 0;border-radius: 48px;opacity: 0.5;background: linear-gradient(90deg, #FFF 8.33%, rgba(255, 255, 255, 0.00) 57.94%);padding: 48px 60px;cursor: pointer;}
 .sec-solution .inner-top .solution-list-wp .solution-list li .list-tit {color: var(--Main, #002E5F);font-size: 32px;font-weight: 800;line-height: 140%;}
 .sec-solution .inner-top .solution-list-wp .solution-list li .list-txt {color: var(--Main, #002E5F);font-size: 16px;font-weight: 500;line-height: 160%;margin-top: 5px;}
-.sec-solution .inner-top .solution-list-wp .solution-list li .btn-more {display: flex;align-items: center;gap: 8px;color: var(--Main, #002E5F);font-size: 14px;font-weight: 600;line-height: 140%;margin-top: 33px;cursor: pointer;}
+.sec-solution .inner-top .solution-list-wp .solution-list li .btn-more {display: inline-flex;align-items: center;gap: 8px;color: var(--Main, #002E5F);font-size: 14px;font-weight: 600;line-height: 140%;margin-top: 33px;cursor: pointer;}
 .sec-solution .inner-top .solution-list-wp .solution-list li .btn-more i {font-size: 14px;}
 .sec-solution .inner-top .solution-list-wp .solution-list li.on .btn-more:hover {color: var(--Point, #FF7409);}
 .sec-solution .inner-top .solution-list-wp .solution-list li.on {background: var(--White, #FFF);box-shadow: 0px 1px 24px 0px rgba(205, 205, 205, 0.20);opacity: 1;}
